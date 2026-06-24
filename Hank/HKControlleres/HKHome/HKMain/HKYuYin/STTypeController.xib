@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner" customClass="STTypeController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="animationImage" destination="7Iv-vt-dsx" id="6SB-1P-DdB"/>
+                <outlet property="handleView" destination="bkG-9T-ge7" id="iXX-rB-Rgx"/>
+                <outlet property="listenImage" destination="ChB-sj-x1N" id="WBt-TY-bkG"/>
+                <outlet property="listenView" destination="IHL-wQ-LQ3" id="nBp-96-P3d"/>
+                <outlet property="statuslabel" destination="sIc-KW-k4y" id="RME-Kb-3Cp"/>
+                <outlet property="view" destination="gkh-sS-0Bv" id="XCO-v5-YVj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gkh-sS-0Bv">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zba-tv-iF0">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.97" id="F3f-xo-pBp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZ5-Cq-JJV">
+                    <rect key="frame" x="0.0" y="231" width="390" height="260"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-wQ-LQ3">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="260"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eveantPhoneDelete_a" translatesAutoresizingMaskIntoConstraints="NO" id="ChB-sj-x1N">
+                                    <rect key="frame" x="80" y="0.0" width="230" height="230"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="229.99" id="7dU-bM-ZEx"/>
+                                        <constraint firstAttribute="width" constant="229.99" id="Cez-Pz-2Wo"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ChB-sj-x1N" firstAttribute="top" secondItem="IHL-wQ-LQ3" secondAttribute="top" id="X6S-hO-HSv"/>
+                                <constraint firstItem="ChB-sj-x1N" firstAttribute="centerX" secondItem="IHL-wQ-LQ3" secondAttribute="centerX" id="Wrm-vA-bGc"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkG-9T-ge7">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="260"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="materialRegister_1o" translatesAutoresizingMaskIntoConstraints="NO" id="7Iv-vt-dsx">
+                                    <rect key="frame" x="80" y="0.0" width="230" height="230"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="229.98" id="6DK-ZO-2GC"/>
+                                        <constraint firstAttribute="height" constant="229.98" id="fnu-RQ-Znd"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="7Iv-vt-dsx" firstAttribute="centerX" secondItem="bkG-9T-ge7" secondAttribute="centerX" id="SBK-rs-3Sf"/>
+                                <constraint firstItem="7Iv-vt-dsx" firstAttribute="top" secondItem="bkG-9T-ge7" secondAttribute="top" id="1sx-pm-nj0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="IHL-wQ-LQ3" secondAttribute="bottom" id="vja-ay-8jW"/>
+                        <constraint firstItem="bkG-9T-ge7" firstAttribute="top" secondItem="iZ5-Cq-JJV" secondAttribute="top" id="5Af-Yq-R4b"/>
+                        <constraint firstAttribute="trailing" secondItem="IHL-wQ-LQ3" secondAttribute="trailing" id="9i2-qk-tuC"/>
+                        <constraint firstItem="bkG-9T-ge7" firstAttribute="leading" secondItem="iZ5-Cq-JJV" secondAttribute="leading" id="kBw-XV-Zoo"/>
+                        <constraint firstAttribute="height" constant="260.02" id="vQ3-Wz-xqM"/>
+                        <constraint firstAttribute="trailing" secondItem="bkG-9T-ge7" secondAttribute="trailing" id="8F4-Ed-4Bh"/>
+                        <constraint firstItem="IHL-wQ-LQ3" firstAttribute="top" secondItem="iZ5-Cq-JJV" secondAttribute="top" id="fr6-ed-e5O"/>
+                        <constraint firstAttribute="bottom" secondItem="bkG-9T-ge7" secondAttribute="bottom" id="qbc-v4-m4e"/>
+                        <constraint firstItem="IHL-wQ-LQ3" firstAttribute="leading" secondItem="iZ5-Cq-JJV" secondAttribute="leading" id="k8F-ph-K5Y"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rp2-Pj-XgJ">
+                    <rect key="frame" x="304" y="685" width="70" height="70"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="welcomeArrow"/>
+                    <connections>
+                        <action selector="back:" destination="WVj-YH-4F9" eventType="touchUpInside" id="EMd-1B-dUm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2H-i7-pED">
+                    <rect key="frame" x="16" y="685" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70.02" id="RZL-l9-NRC"/>
+                        <constraint firstAttribute="width" constant="69.96" id="tgR-9C-3cv"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="fiveAnima"/>
+                    <connections>
+                        <action selector="choose:" destination="WVj-YH-4F9" eventType="touchUpInside" id="YRe-CW-0E9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在聆听" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIc-KW-k4y">
+                    <rect key="frame" x="166.66666666666666" y="708" width="76.666666666666657" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Rcn-5l-sgo"/>
+            <color key="backgroundColor" red="0.0078431372549019607" green="0.011764705882352941" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Rcn-5l-sgo" firstAttribute="trailing" secondItem="Rp2-Pj-XgJ" secondAttribute="trailing" constant="15.98" id="l8E-87-FRz"/>
+                <constraint firstItem="Zba-tv-iF0" firstAttribute="top" secondItem="Rcn-5l-sgo" secondAttribute="top" id="lv7-KD-l4U"/>
+                <constraint firstItem="sIc-KW-k4y" firstAttribute="centerX" secondItem="gkh-sS-0Bv" secondAttribute="centerX" constant="10.02" id="sPv-6z-3YP"/>
+                <constraint firstItem="l2H-i7-pED" firstAttribute="leading" secondItem="gkh-sS-0Bv" secondAttribute="leading" constant="15.98" id="PL7-r5-jLz"/>
+                <constraint firstItem="iZ5-Cq-JJV" firstAttribute="top" secondItem="Zba-tv-iF0" secondAttribute="bottom" constant="140.03" id="tAD-zV-fio"/>
+                <constraint firstItem="l2H-i7-pED" firstAttribute="centerY" secondItem="Rp2-Pj-XgJ" secondAttribute="centerY" id="I6q-Fr-38Y"/>
+                <constraint firstItem="Rcn-5l-sgo" firstAttribute="trailing" secondItem="Zba-tv-iF0" secondAttribute="trailing" id="eST-kP-CVd"/>
+                <constraint firstItem="iZ5-Cq-JJV" firstAttribute="leading" secondItem="Rcn-5l-sgo" secondAttribute="leading" id="ElC-5Z-FSZ"/>
+                <constraint firstItem="Rcn-5l-sgo" firstAttribute="trailing" secondItem="iZ5-Cq-JJV" secondAttribute="trailing" id="dzl-gk-hQF"/>
+                <constraint firstItem="Rcn-5l-sgo" firstAttribute="bottom" secondItem="Rp2-Pj-XgJ" secondAttribute="bottom" constant="54.98" id="M0g-ug-k4D"/>
+                <constraint firstItem="Zba-tv-iF0" firstAttribute="leading" secondItem="Rcn-5l-sgo" secondAttribute="leading" id="hmR-r7-pO4"/>
+                <constraint firstItem="sIc-KW-k4y" firstAttribute="centerY" secondItem="l2H-i7-pED" secondAttribute="centerY" id="nsf-Uv-AOx"/>
+            </constraints>
+            <point key="canvasLocation" x="87.692307692307693" y="-48.341232227488149"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="welcomeArrow" width="70" height="70"/>
+        <image name="fiveAnima" width="70" height="70"/>
+        <image name="eveantPhoneDelete_a" width="228" height="228"/>
+        <image name="materialRegister_1o" width="214" height="176"/>
+    </resources>
+</document>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner" customClass="TChatController" customModule="Hank" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="9t1-Su-3sN" id="hKV-79-ktK"/>
+                <outlet property="memberImage" destination="1iL-Sf-ytl" id="PFB-de-wZ8"/>
+                <outlet property="tableView" destination="7d4-lw-9Fe" id="Yk2-tc-bla"/>
+                <outlet property="view" destination="gkh-sS-0Bv" id="XCO-v5-YVj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gkh-sS-0Bv">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooT-Iz-5aA">
+                    <rect key="frame" x="16" y="114" width="360" height="142"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnE-dB-WVv">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="142"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="chatVip:" destination="WVj-YH-4F9" eventType="touchUpInside" id="45B-uA-NXY"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audioJjzy" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-Sf-ytl">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="142"/>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂未开通会员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9t1-Su-3sN">
+                            <rect key="frame" x="22" y="48" width="83.666666666666671" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19.989999999999998" id="RLu-o2-GGQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="CnE-dB-WVv" firstAttribute="top" secondItem="ooT-Iz-5aA" secondAttribute="top" id="06b-fw-HkW"/>
+                        <constraint firstAttribute="bottom" secondItem="CnE-dB-WVv" secondAttribute="bottom" id="1zi-TI-GhY"/>
+                        <constraint firstAttribute="width" secondItem="ooT-Iz-5aA" secondAttribute="height" multiplier="361:142" id="3DH-4I-xBD"/>
+                        <constraint firstItem="CnE-dB-WVv" firstAttribute="leading" secondItem="ooT-Iz-5aA" secondAttribute="leading" id="894-vh-Vab"/>
+                        <constraint firstAttribute="bottom" secondItem="1iL-Sf-ytl" secondAttribute="bottom" id="Ihg-5W-KWs"/>
+                        <constraint firstAttribute="trailing" secondItem="CnE-dB-WVv" secondAttribute="trailing" id="d8B-Ie-5xb"/>
+                        <constraint firstItem="1iL-Sf-ytl" firstAttribute="leading" secondItem="ooT-Iz-5aA" secondAttribute="leading" id="f9f-WU-RQw"/>
+                        <constraint firstAttribute="height" constant="142.02000000000001" id="hfx-pv-n8i"/>
+                        <constraint firstItem="9t1-Su-3sN" firstAttribute="leading" secondItem="ooT-Iz-5aA" secondAttribute="leading" constant="21.949999999999999" id="lG5-tM-4S7"/>
+                        <constraint firstItem="1iL-Sf-ytl" firstAttribute="top" secondItem="ooT-Iz-5aA" secondAttribute="top" id="pe5-8z-uwY"/>
+                        <constraint firstItem="9t1-Su-3sN" firstAttribute="top" secondItem="ooT-Iz-5aA" secondAttribute="top" constant="48.039999999999999" id="rd4-EJ-Po2"/>
+                        <constraint firstAttribute="trailing" secondItem="1iL-Sf-ytl" secondAttribute="trailing" id="zod-Nm-AUv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGW-Dj-iNC">
+                    <rect key="frame" x="0.0" y="59" width="392" height="44"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatdrawOpenTable" translatesAutoresizingMaskIntoConstraints="NO" id="Pwp-gv-qkp">
+                            <rect key="frame" x="15" y="3.3333333333333357" width="68" height="37"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Pwp-gv-qkp" firstAttribute="leading" secondItem="oGW-Dj-iNC" secondAttribute="leading" constant="14.949999999999999" id="NRy-oZ-Weu"/>
+                        <constraint firstAttribute="height" constant="43.990000000000002" id="bAC-tx-cUq"/>
+                        <constraint firstItem="Pwp-gv-qkp" firstAttribute="centerY" secondItem="oGW-Dj-iNC" secondAttribute="centerY" id="dSI-AS-9BV"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7d4-lw-9Fe">
+                    <rect key="frame" x="0.0" y="266" width="392" height="552"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="WVj-YH-4F9" id="Awn-dl-q5c"/>
+                        <outlet property="delegate" destination="WVj-YH-4F9" id="CFu-9b-HDI"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lkt-8F-o0f"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ooT-Iz-5aA" firstAttribute="top" secondItem="oGW-Dj-iNC" secondAttribute="bottom" constant="10.99" id="151-In-56K"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="ooT-Iz-5aA" secondAttribute="trailing" constant="16.02" id="3yJ-P7-KQo"/>
+                <constraint firstItem="oGW-Dj-iNC" firstAttribute="top" secondItem="lkt-8F-o0f" secondAttribute="top" id="DRZ-mi-1KF"/>
+                <constraint firstItem="7d4-lw-9Fe" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" id="PW1-Lz-FVG"/>
+                <constraint firstItem="oGW-Dj-iNC" firstAttribute="leading" secondItem="gkh-sS-0Bv" secondAttribute="leading" id="Pf7-Og-TET"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="oGW-Dj-iNC" secondAttribute="trailing" id="cRl-fe-Ej0"/>
+                <constraint firstItem="ooT-Iz-5aA" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" constant="16.010000000000002" id="iud-ox-QJq"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="7d4-lw-9Fe" secondAttribute="trailing" id="j1Q-zV-oXD"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="bottom" secondItem="7d4-lw-9Fe" secondAttribute="bottom" id="ltO-hR-B4G"/>
+                <constraint firstItem="7d4-lw-9Fe" firstAttribute="top" secondItem="ooT-Iz-5aA" secondAttribute="bottom" constant="10.02" id="tnX-W9-HEQ"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="audioJjzy" width="360" height="144"/>
+        <image name="chatdrawOpenTable" width="68" height="37"/>
+    </resources>
+</document>

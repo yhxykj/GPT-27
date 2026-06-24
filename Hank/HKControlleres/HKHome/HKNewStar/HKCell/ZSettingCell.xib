@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="ZSettingCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="169" height="133"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="Mif-Vd-N27">
+                        <rect key="frame" x="0.0" y="0.0" width="169" height="133"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="u7z-mu-jur"/>
+            <constraints>
+                <constraint firstItem="Mif-Vd-N27" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="eif-Z6-3hH"/>
+                <constraint firstAttribute="trailing" secondItem="Mif-Vd-N27" secondAttribute="trailing" id="kX3-VB-OMi"/>
+                <constraint firstAttribute="bottom" secondItem="Mif-Vd-N27" secondAttribute="bottom" id="y5F-M9-PMY"/>
+                <constraint firstItem="Mif-Vd-N27" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="7dx-pj-6A8"/>
+            </constraints>
+            <connections>
+                <outlet property="cell_image" destination="Mif-Vd-N27" id="wq9-vR-Txu"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="flowAvatar" width="169" height="133"/>
+    </resources>
+</document>

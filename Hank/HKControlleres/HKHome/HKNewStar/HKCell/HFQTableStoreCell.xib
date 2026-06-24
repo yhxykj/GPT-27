@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="HFQTableStoreCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="429"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="429"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTE-2t-47C">
+                        <rect key="frame" x="0.0" y="0.0" width="358" height="429"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjv-6S-VWs">
+                        <rect key="frame" x="14" y="335" width="330" height="79"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QEM-Zq-eAt">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="79"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="藏族服饰美女" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVB-m6-wCs">
+                                <rect key="frame" x="21.999999999999993" y="30" width="95.333333333333314" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" red="0.98431372549019602" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baddResponse" translatesAutoresizingMaskIntoConstraints="NO" id="sr5-t4-8Ux">
+                                <rect key="frame" x="260" y="10" width="60" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60.01" id="UUB-9J-Oha"/>
+                                    <constraint firstAttribute="height" constant="59.03" id="QRC-h8-Xrl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="QEM-Zq-eAt" firstAttribute="leading" secondItem="yjv-6S-VWs" secondAttribute="leading" id="WwZ-Tk-rcW"/>
+                            <constraint firstItem="sr5-t4-8Ux" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tVB-m6-wCs" secondAttribute="trailing" constant="22.01" id="mww-9q-VjG"/>
+                            <constraint firstItem="QEM-Zq-eAt" firstAttribute="top" secondItem="yjv-6S-VWs" secondAttribute="top" id="PT5-lU-aL9"/>
+                            <constraint firstAttribute="bottom" secondItem="QEM-Zq-eAt" secondAttribute="bottom" id="FFX-PO-wK1"/>
+                            <constraint firstItem="sr5-t4-8Ux" firstAttribute="centerY" secondItem="yjv-6S-VWs" secondAttribute="centerY" id="9a4-Ow-9mx"/>
+                            <constraint firstAttribute="trailing" secondItem="QEM-Zq-eAt" secondAttribute="trailing" id="vnS-2d-B9s"/>
+                            <constraint firstAttribute="trailing" secondItem="sr5-t4-8Ux" secondAttribute="trailing" constant="9.99" id="yQA-gL-nlc"/>
+                            <constraint firstAttribute="height" constant="78.95" id="eOW-AQ-ebp"/>
+                            <constraint firstItem="tVB-m6-wCs" firstAttribute="centerY" secondItem="yjv-6S-VWs" secondAttribute="centerY" id="4sF-d7-1On"/>
+                            <constraint firstItem="tVB-m6-wCs" firstAttribute="leading" secondItem="yjv-6S-VWs" secondAttribute="leading" constant="22.02" id="dTi-8t-jB9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="11"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="u7z-mu-jur"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KTE-2t-47C" secondAttribute="trailing" id="XXE-6P-9mq"/>
+                <constraint firstItem="KTE-2t-47C" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="YcM-9G-9hk"/>
+                <constraint firstAttribute="bottom" secondItem="yjv-6S-VWs" secondAttribute="bottom" constant="14.99" id="EhW-aj-h2M"/>
+                <constraint firstAttribute="bottom" secondItem="KTE-2t-47C" secondAttribute="bottom" id="bQE-r8-FYM"/>
+                <constraint firstItem="yjv-6S-VWs" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" constant="13.99" id="YCv-7N-6IT"/>
+                <constraint firstAttribute="trailing" secondItem="yjv-6S-VWs" secondAttribute="trailing" constant="13.97" id="St1-lq-I5n"/>
+                <constraint firstItem="KTE-2t-47C" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="iar-wN-n2L"/>
+            </constraints>
+            <connections>
+                <outlet property="cell_image" destination="KTE-2t-47C" id="DlE-tv-tI6"/>
+                <outlet property="cell_label" destination="tVB-m6-wCs" id="i34-uy-CqJ"/>
+                <outlet property="shadowImage" destination="QEM-Zq-eAt" id="faO-9M-UBY"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="baddResponse" width="60" height="59"/>
+    </resources>
+</document>

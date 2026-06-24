@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="KQAAlamofireCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="247"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneSbpk" translatesAutoresizingMaskIntoConstraints="NO" id="iOm-1N-HyI">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="247"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K06-XD-EFP">
+                        <rect key="frame" x="133" y="0.0" width="47" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46.98" id="3v0-xn-v2O"/>
+                            <constraint firstAttribute="height" constant="47.05" id="0wB-gf-NWa"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="doneXsfgSetting"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="u7z-mu-jur"/>
+            <constraints>
+                <constraint firstItem="K06-XD-EFP" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="XWP-OA-VEN"/>
+                <constraint firstAttribute="bottom" secondItem="iOm-1N-HyI" secondAttribute="bottom" id="Lj9-lz-KlW"/>
+                <constraint firstAttribute="trailing" secondItem="K06-XD-EFP" secondAttribute="trailing" id="fVD-NG-3ZQ"/>
+                <constraint firstItem="iOm-1N-HyI" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="1FR-P7-QvD"/>
+                <constraint firstAttribute="trailing" secondItem="iOm-1N-HyI" secondAttribute="trailing" id="Pc5-ch-yo0"/>
+                <constraint firstItem="iOm-1N-HyI" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="0Ob-5O-KYN"/>
+            </constraints>
+            <size key="customSize" width="180" height="247"/>
+            <connections>
+                <outlet property="bgImage" destination="iOm-1N-HyI" id="ANr-Ek-Ba7"/>
+                <outlet property="button" destination="K06-XD-EFP" id="pOI-LD-GvQ"/>
+            </connections>
+            <point key="canvasLocation" x="230.53435114503816" y="58.098591549295776"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="phoneSbpk" width="168" height="227"/>
+        <image name="doneXsfgSetting" width="25" height="25"/>
+    </resources>
+</document>
