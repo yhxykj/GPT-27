@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner" customClass="KMCardController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="gkh-sS-0Bv" id="XCO-v5-YVj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gkh-sS-0Bv">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallBackJjzy" translatesAutoresizingMaskIntoConstraints="NO" id="UsB-G3-Q91">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-dd-2iq">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="styleEveant"/>
+                    <connections>
+                        <action selector="_nextClick" destination="WVj-YH-4F9" eventType="touchUpInside" id="HdQ-vb-QQq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqL-Pj-sjb">
+                    <rect key="frame" x="10" y="59" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54.98" id="fb8-56-or3"/>
+                        <constraint firstAttribute="height" constant="44.01" id="Pf6-qk-hMC"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="recordsThree"/>
+                    <connections>
+                        <action selector="_dissmiss:" destination="WVj-YH-4F9" eventType="touchUpInside" id="KCZ-8G-Lma"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lkt-8F-o0f"/>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JqL-Pj-sjb" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" constant="9.99" id="Vel-hm-2WZ"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="acZ-dd-2iq" secondAttribute="trailing" constant="46.01" id="Ha7-UW-M43"/>
+                <constraint firstItem="JqL-Pj-sjb" firstAttribute="top" secondItem="lkt-8F-o0f" secondAttribute="top" id="Fno-sm-M5D"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="UsB-G3-Q91" secondAttribute="trailing" id="m7V-Gx-b0V"/>
+                <constraint firstAttribute="bottom" secondItem="UsB-G3-Q91" secondAttribute="bottom" id="qHc-Q4-FJQ"/>
+                <constraint firstItem="UsB-G3-Q91" firstAttribute="top" secondItem="gkh-sS-0Bv" secondAttribute="top" id="2Nc-vj-f1o"/>
+                <constraint firstItem="acZ-dd-2iq" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" constant="46.01" id="pzL-7t-koy"/>
+                <constraint firstItem="UsB-G3-Q91" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" id="MxC-Z3-goc"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="bottom" secondItem="acZ-dd-2iq" secondAttribute="bottom" constant="20.01" id="DWV-zW-mGu"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="recordsThree" width="10" height="18"/>
+        <image name="smallBackJjzy" width="390" height="844"/>
+        <image name="styleEveant" width="298" height="54"/>
+    </resources>
+</document>

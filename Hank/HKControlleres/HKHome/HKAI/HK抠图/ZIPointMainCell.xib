@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="ZIPointMainCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeQuicklogin" translatesAutoresizingMaskIntoConstraints="NO" id="89f-jF-5jA">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="113"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="u7z-mu-jur"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="89f-jF-5jA" secondAttribute="bottom" id="0t6-9X-sY3"/>
+                <constraint firstAttribute="trailing" secondItem="89f-jF-5jA" secondAttribute="trailing" id="0Le-s6-Frf"/>
+                <constraint firstItem="89f-jF-5jA" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="4o3-j6-uoH"/>
+                <constraint firstItem="89f-jF-5jA" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="47q-bc-Mqk"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImage" destination="89f-jF-5jA" id="h1W-C5-CBk"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="welcomeQuicklogin" width="85" height="113"/>
+    </resources>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="XYOCreateCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="148" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="148" height="89"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCanvas" translatesAutoresizingMaskIntoConstraints="NO" id="KXU-B5-ui4">
+                        <rect key="frame" x="63" y="10" width="22" height="25"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pil-PV-lQK">
+                        <rect key="frame" x="56.333333333333329" y="62" width="35.333333333333329" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="u7z-mu-jur"/>
+            <constraints>
+                <constraint firstItem="KXU-B5-ui4" firstAttribute="centerX" secondItem="Lbw-eF-3mQ" secondAttribute="centerX" id="sdE-rg-jS5"/>
+                <constraint firstItem="KXU-B5-ui4" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" constant="9.98" id="3Jo-c3-Hs3"/>
+                <constraint firstAttribute="bottom" secondItem="Pil-PV-lQK" secondAttribute="bottom" constant="10.02" id="O0B-TD-28W"/>
+                <constraint firstItem="Pil-PV-lQK" firstAttribute="centerX" secondItem="Lbw-eF-3mQ" secondAttribute="centerX" id="fnq-f8-CYz"/>
+            </constraints>
+            <size key="customSize" width="148" height="89"/>
+            <connections>
+                <outlet property="icon" destination="KXU-B5-ui4" id="mQi-k5-RJs"/>
+                <outlet property="label" destination="Pil-PV-lQK" id="XNI-b0-64C"/>
+            </connections>
+            <point key="canvasLocation" x="167.93893129770993" y="1.0563380281690142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconCanvas" width="22" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="UTL-u3-t8c" customClass="GZFlowCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="243"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UTL-u3-t8c" id="N15-vP-yPn">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="243"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIV-LB-KFy">
+                        <rect key="frame" x="16" y="12" width="315" height="219"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyd-sK-Psm">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="219"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.12549019607843137" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每次回答的背后是亿级参数高性能大规模神经网络。因技术实现成本较高，为了保持持续服务，请升级 PRO 会员后使用。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJv-Am-SZp">
+                                <rect key="frame" x="19" y="20.000000000000004" width="276" height="50.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zip-K7-ky3">
+                                <rect key="frame" x="19" y="85" width="277" height="53"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="shouPictureJiao"/>
+                                <connections>
+                                    <action selector="_enterElevtClick:" destination="UTL-u3-t8c" eventType="touchUpInside" id="Wh1-yG-sN8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1V7-7Z-ugG">
+                                <rect key="frame" x="19" y="149" width="277" height="53"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="textDelete_oxUser"/>
+                                <connections>
+                                    <action selector="_freeNumberClick:" destination="UTL-u3-t8c" eventType="touchUpInside" id="6Ei-pG-3xg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1V7-7Z-ugG" secondAttribute="trailing" constant="18.98" id="COR-xW-yMS"/>
+                            <constraint firstAttribute="bottom" secondItem="1V7-7Z-ugG" secondAttribute="bottom" constant="17.01" id="HaA-f1-h6M"/>
+                            <constraint firstItem="kyd-sK-Psm" firstAttribute="leading" secondItem="CIV-LB-KFy" secondAttribute="leading" id="P1o-8u-FgF"/>
+                            <constraint firstAttribute="trailing" secondItem="kyd-sK-Psm" secondAttribute="trailing" id="EFV-Ar-DQf"/>
+                            <constraint firstItem="zip-K7-ky3" firstAttribute="leading" secondItem="CIV-LB-KFy" secondAttribute="leading" constant="18.97" id="qyo-3e-TBY"/>
+                            <constraint firstAttribute="trailing" secondItem="zip-K7-ky3" secondAttribute="trailing" constant="18.99" id="FBK-jV-baa"/>
+                            <constraint firstItem="kyd-sK-Psm" firstAttribute="top" secondItem="CIV-LB-KFy" secondAttribute="top" id="R8m-Xg-cmS"/>
+                            <constraint firstAttribute="height" constant="219.01" id="QmV-Xy-GP5"/>
+                            <constraint firstAttribute="bottom" secondItem="kyd-sK-Psm" secondAttribute="bottom" id="8vK-gP-V0X"/>
+                            <constraint firstAttribute="trailing" secondItem="UJv-Am-SZp" secondAttribute="trailing" constant="20.02" id="J8T-4F-Mds"/>
+                            <constraint firstItem="UJv-Am-SZp" firstAttribute="leading" secondItem="CIV-LB-KFy" secondAttribute="leading" constant="18.96" id="yEi-AF-CoW"/>
+                            <constraint firstItem="UJv-Am-SZp" firstAttribute="top" secondItem="CIV-LB-KFy" secondAttribute="top" constant="19.97" id="rtK-KX-0TC"/>
+                            <constraint firstAttribute="bottom" secondItem="zip-K7-ky3" secondAttribute="bottom" constant="81.01" id="CjJ-xF-VgN"/>
+                            <constraint firstItem="1V7-7Z-ugG" firstAttribute="leading" secondItem="CIV-LB-KFy" secondAttribute="leading" constant="19.04" id="rGn-2c-5I2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CIV-LB-KFy" firstAttribute="leading" secondItem="N15-vP-yPn" secondAttribute="leading" constant="16.02" id="hDD-3t-yEO"/>
+                    <constraint firstItem="CIV-LB-KFy" firstAttribute="top" secondItem="N15-vP-yPn" secondAttribute="top" constant="12.03" id="wd7-rS-Heb"/>
+                    <constraint firstAttribute="bottom" secondItem="CIV-LB-KFy" secondAttribute="bottom" constant="11.97" id="9fl-qY-7to"/>
+                    <constraint firstAttribute="trailing" secondItem="CIV-LB-KFy" secondAttribute="trailing" constant="44.03" id="qxc-FC-XQP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Kgc-v1-QHg"/>
+            <connections>
+                <outlet property="label" destination="UJv-Am-SZp" id="v27-Mz-T9g"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="textDelete_oxUser" width="292" height="53"/>
+        <image name="shouPictureJiao" width="292" height="53"/>
+    </resources>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UTL-u3-t8c" customClass="OShouBufferCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UTL-u3-t8c" id="N15-vP-yPn">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEp-rH-dj2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconType_8q" translatesAutoresizingMaskIntoConstraints="NO" id="HJO-aZ-Rfx">
+                                <rect key="frame" x="16" y="7" width="358" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HJO-aZ-Rfx" secondAttribute="height" multiplier="179:30" id="30u-Cx-8gf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="HJO-aZ-Rfx" firstAttribute="top" secondItem="TEp-rH-dj2" secondAttribute="top" constant="6.97" id="LfR-XQ-s3F"/>
+                            <constraint firstAttribute="trailing" secondItem="HJO-aZ-Rfx" secondAttribute="trailing" constant="16.01" id="j2U-57-bys"/>
+                            <constraint firstItem="HJO-aZ-Rfx" firstAttribute="leading" secondItem="TEp-rH-dj2" secondAttribute="leading" constant="16.01" id="fI5-i5-jgr"/>
+                            <constraint firstAttribute="bottom" secondItem="HJO-aZ-Rfx" secondAttribute="bottom" constant="7.02" id="rQY-tf-ZhG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TEp-rH-dj2" secondAttribute="bottom" id="enK-JR-XVV"/>
+                    <constraint firstAttribute="trailing" secondItem="TEp-rH-dj2" secondAttribute="trailing" id="xLp-kG-Pv0"/>
+                    <constraint firstItem="TEp-rH-dj2" firstAttribute="top" secondItem="N15-vP-yPn" secondAttribute="top" id="V0z-U7-oy0"/>
+                    <constraint firstItem="TEp-rH-dj2" firstAttribute="leading" secondItem="N15-vP-yPn" secondAttribute="leading" id="BYv-gL-Tqy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Kgc-v1-QHg"/>
+            <connections>
+                <outlet property="icon" destination="HJO-aZ-Rfx" id="9AG-N7-8RM"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconType_8q" width="358" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner" customClass="OAChuangNewsController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="VnU-cc-g1B" id="1ap-hw-79P"/>
+                <outlet property="picImage" destination="ZBh-jB-Eit" id="PT6-qQ-FBK"/>
+                <outlet property="savebutton" destination="lJ0-8d-t4l" id="DJV-s2-zth"/>
+                <outlet property="view" destination="gkh-sS-0Bv" id="XCO-v5-YVj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gkh-sS-0Bv">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uz3-86-8pF">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4S3-El-e57">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.97" id="1WE-0r-Jxw"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="recordsThree"/>
+                            <connections>
+                                <action selector="backAction:" destination="WVj-YH-4F9" eventType="touchUpInside" id="lWx-sY-3xV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJ0-8d-t4l">
+                            <rect key="frame" x="308" y="0.0" width="75" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75.01" id="7X5-3n-yz6"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="toolCreate"/>
+                            <connections>
+                                <action selector="saveAction:" destination="WVj-YH-4F9" eventType="touchUpInside" id="MtR-cl-kqG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lJ0-8d-t4l" firstAttribute="top" secondItem="uz3-86-8pF" secondAttribute="top" id="UL0-UQ-eZb"/>
+                        <constraint firstAttribute="trailing" secondItem="lJ0-8d-t4l" secondAttribute="trailing" constant="10.02" id="kqU-GK-w1L"/>
+                        <constraint firstItem="4S3-El-e57" firstAttribute="top" secondItem="uz3-86-8pF" secondAttribute="top" id="TiW-B9-P5a"/>
+                        <constraint firstAttribute="height" constant="44.03" id="40Y-rp-Hn2"/>
+                        <constraint firstAttribute="bottom" secondItem="4S3-El-e57" secondAttribute="bottom" id="0sH-VP-iVx"/>
+                        <constraint firstAttribute="bottom" secondItem="lJ0-8d-t4l" secondAttribute="bottom" id="mw5-4k-rdD"/>
+                        <constraint firstItem="4S3-El-e57" firstAttribute="leading" secondItem="uz3-86-8pF" secondAttribute="leading" id="nBd-qE-M8k"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnU-cc-g1B">
+                    <rect key="frame" x="15" y="114" width="363" height="467"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZBh-jB-Eit">
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="467"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ZBh-jB-Eit" secondAttribute="bottom" id="gbE-HO-hgP"/>
+                        <constraint firstAttribute="height" constant="467.01" id="VAY-U0-QD8"/>
+                        <constraint firstItem="ZBh-jB-Eit" firstAttribute="leading" secondItem="VnU-cc-g1B" secondAttribute="leading" id="EtV-M0-H4q"/>
+                        <constraint firstAttribute="trailing" secondItem="ZBh-jB-Eit" secondAttribute="trailing" id="f99-6B-Qi3"/>
+                        <constraint firstItem="ZBh-jB-Eit" firstAttribute="top" secondItem="VnU-cc-g1B" secondAttribute="top" id="AJ6-gI-XJV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lkt-8F-o0f"/>
+            <color key="backgroundColor" red="0.054901960784313725" green="0.058823529411764705" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uz3-86-8pF" secondAttribute="trailing" id="4Wi-nd-cnb"/>
+                <constraint firstItem="VnU-cc-g1B" firstAttribute="top" secondItem="uz3-86-8pF" secondAttribute="bottom" constant="11.02" id="eH1-az-MG2"/>
+                <constraint firstItem="uz3-86-8pF" firstAttribute="top" secondItem="lkt-8F-o0f" secondAttribute="top" id="Hpw-T2-sTD"/>
+                <constraint firstItem="VnU-cc-g1B" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" constant="15.03" id="h8c-fP-q5a"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="VnU-cc-g1B" secondAttribute="trailing" constant="15.02" id="XLe-Xp-fCL"/>
+                <constraint firstItem="uz3-86-8pF" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" id="ZwZ-LB-jPa"/>
+            </constraints>
+            <point key="canvasLocation" x="178" y="-42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="toolCreate" width="66" height="30"/>
+        <image name="recordsThree" width="10" height="18"/>
+    </resources>
+</document>

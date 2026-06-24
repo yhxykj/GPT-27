@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="MRCFirstOrtraitCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_select" translatesAutoresizingMaskIntoConstraints="NO" id="yoS-Ha-Yc9">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZiO-kU-sNZ">
+                        <rect key="frame" x="4" y="4" width="105" height="95"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="u7z-mu-jur"/>
+            <constraints>
+                <constraint firstItem="ZiO-kU-sNZ" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" constant="3.99" id="OJX-H7-nx9"/>
+                <constraint firstItem="ZiO-kU-sNZ" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" constant="4.01" id="BtO-6g-fEN"/>
+                <constraint firstAttribute="bottom" secondItem="ZiO-kU-sNZ" secondAttribute="bottom" constant="4.01" id="VKt-cV-Re7"/>
+                <constraint firstAttribute="trailing" secondItem="yoS-Ha-Yc9" secondAttribute="trailing" id="HHR-o2-XVM"/>
+                <constraint firstAttribute="bottom" secondItem="yoS-Ha-Yc9" secondAttribute="bottom" id="ucm-I8-rJp"/>
+                <constraint firstAttribute="trailing" secondItem="ZiO-kU-sNZ" secondAttribute="trailing" constant="4.02" id="Qwb-5U-O8t"/>
+                <constraint firstItem="yoS-Ha-Yc9" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="nG7-2w-By3"/>
+                <constraint firstItem="yoS-Ha-Yc9" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="vfs-PX-7ep"/>
+            </constraints>
+            <size key="customSize" width="113" height="103"/>
+            <connections>
+                <outlet property="Icon" destination="ZiO-kU-sNZ" id="UcN-zt-80f"/>
+                <outlet property="bgImage" destination="yoS-Ha-Yc9" id="3eA-MQ-rIz"/>
+            </connections>
+            <point key="canvasLocation" x="179.23076923076923" y="6.7535545023696679"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cell_select" width="60" height="60"/>
+    </resources>
+</document>

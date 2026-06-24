@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="AFNGraphicsCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBD-Jx-zZC">
+                        <rect key="frame" x="15" y="5" width="349" height="62"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pathAssitant" translatesAutoresizingMaskIntoConstraints="NO" id="Zx3-U5-sY7">
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="62"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sbpkCanvasWater" translatesAutoresizingMaskIntoConstraints="NO" id="ylk-6i-wn2">
+                                <rect key="frame" x="308" y="20" width="22" height="22"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBY-rY-i0Z">
+                                <rect key="frame" x="26" y="21" width="36" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.01" id="ORA-TM-3O7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Zx3-U5-sY7" secondAttribute="bottom" id="udo-O7-J6l"/>
+                            <constraint firstAttribute="trailing" secondItem="ylk-6i-wn2" secondAttribute="trailing" constant="19.03" id="rNY-Ta-6uc"/>
+                            <constraint firstItem="ylk-6i-wn2" firstAttribute="centerY" secondItem="EBD-Jx-zZC" secondAttribute="centerY" id="s9e-Ig-c7s"/>
+                            <constraint firstItem="XBY-rY-i0Z" firstAttribute="centerY" secondItem="EBD-Jx-zZC" secondAttribute="centerY" id="is4-Rl-fpd"/>
+                            <constraint firstItem="XBY-rY-i0Z" firstAttribute="leading" secondItem="EBD-Jx-zZC" secondAttribute="leading" constant="26.02" id="dkp-Du-JBr"/>
+                            <constraint firstAttribute="trailing" secondItem="Zx3-U5-sY7" secondAttribute="trailing" id="TW0-IW-5mI"/>
+                            <constraint firstItem="Zx3-U5-sY7" firstAttribute="leading" secondItem="EBD-Jx-zZC" secondAttribute="leading" id="SWK-b7-W6W"/>
+                            <constraint firstItem="Zx3-U5-sY7" firstAttribute="top" secondItem="EBD-Jx-zZC" secondAttribute="top" id="OdY-tF-Paf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="u7z-mu-jur"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EBD-Jx-zZC" secondAttribute="bottom" constant="5.01" id="YB5-Ue-mI7"/>
+                <constraint firstItem="EBD-Jx-zZC" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" constant="15.01" id="SiK-TK-2SU"/>
+                <constraint firstItem="EBD-Jx-zZC" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" constant="4.99" id="x2Y-6Q-18X"/>
+                <constraint firstAttribute="trailing" secondItem="EBD-Jx-zZC" secondAttribute="trailing" constant="15.01" id="Zm2-Cy-YDD"/>
+            </constraints>
+            <size key="customSize" width="386" height="95"/>
+            <connections>
+                <outlet property="cell_Image" destination="Zx3-U5-sY7" id="U9K-t1-80f"/>
+                <outlet property="icon" destination="ylk-6i-wn2" id="RXx-rl-73e"/>
+                <outlet property="label" destination="XBY-rY-i0Z" id="VW7-qE-QiA"/>
+            </connections>
+            <point key="canvasLocation" x="238.93129770992365" y="13.732394366197184"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sbpkCanvasWater" width="22" height="22"/>
+        <image name="pathAssitant" width="358" height="65"/>
+    </resources>
+</document>

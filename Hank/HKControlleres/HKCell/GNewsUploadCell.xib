@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="UTL-u3-t8c" customClass="GNewsUploadCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UTL-u3-t8c" id="N15-vP-yPn">
+                <rect key="frame" x="0.0" y="0.0" width="458" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家庭财务管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5A-k1-Gxb">
+                        <rect key="frame" x="20" y="10" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIn-io-Jwd">
+                        <rect key="frame" x="16" y="37" width="426" height="154"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在这个示例中，我们创建了一个包含三个页面的 UIScrollView，并使用 UIPageControl 显示当前页面的指示器。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6C-iH-6OO">
+                                <rect key="frame" x="20" y="16" width="386" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="567-cu-7Kq">
+                                <rect key="frame" x="371" y="110" width="55" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55.01" id="sB5-DC-NCC"/>
+                                    <constraint firstAttribute="height" constant="43.98" id="ivA-qJ-bZY"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="threeBadingStore"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O6C-iH-6OO" firstAttribute="leading" secondItem="gIn-io-Jwd" secondAttribute="leading" constant="20.02" id="RAD-zx-YYO"/>
+                            <constraint firstAttribute="bottom" secondItem="567-cu-7Kq" secondAttribute="bottom" id="0Df-x0-bLj"/>
+                            <constraint firstItem="O6C-iH-6OO" firstAttribute="top" secondItem="gIn-io-Jwd" secondAttribute="top" constant="15.98" id="7LF-a1-rqe"/>
+                            <constraint firstAttribute="trailing" secondItem="567-cu-7Kq" secondAttribute="trailing" id="Gh5-Gx-UlZ"/>
+                            <constraint firstAttribute="trailing" secondItem="O6C-iH-6OO" secondAttribute="trailing" constant="20.02" id="14X-Ps-zfD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gIn-io-Jwd" secondAttribute="bottom" constant="10.01" id="7p5-uT-ITi"/>
+                    <constraint firstItem="r5A-k1-Gxb" firstAttribute="leading" secondItem="N15-vP-yPn" secondAttribute="leading" constant="19.99" id="1TF-jC-Dh6"/>
+                    <constraint firstAttribute="trailing" secondItem="gIn-io-Jwd" secondAttribute="trailing" constant="15.98" id="LFz-td-gOF"/>
+                    <constraint firstItem="gIn-io-Jwd" firstAttribute="top" secondItem="r5A-k1-Gxb" secondAttribute="bottom" constant="9.96" id="9ql-ju-tgt"/>
+                    <constraint firstItem="gIn-io-Jwd" firstAttribute="leading" secondItem="N15-vP-yPn" secondAttribute="leading" constant="15.97" id="mox-qx-i9U"/>
+                    <constraint firstItem="r5A-k1-Gxb" firstAttribute="top" secondItem="N15-vP-yPn" secondAttribute="top" constant="9.99" id="b4u-WA-Qbp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Kgc-v1-QHg"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="create_content_label" destination="O6C-iH-6OO" id="bFK-iS-Jvl"/>
+                <outlet property="create_label" destination="r5A-k1-Gxb" id="3xY-kL-Tsx"/>
+                <outlet property="delete_button" destination="567-cu-7Kq" id="mws-SK-Jxf"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="42.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="threeBadingStore" width="14" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
