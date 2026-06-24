@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="340" id="UTL-u3-t8c" customClass="HAnimaHomeCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="340"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="UTL-u3-t8c" id="N15-vP-yPn">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="340"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRL-aq-ciX">
+                        <rect key="frame" x="16" y="13" width="238" height="307"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在绘画中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfK-jV-3VR">
+                                <rect key="frame" x="18" y="15" width="79.666666666666671" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22.04" id="b7Y-Pf-e8k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wHq-15-wq1" customClass="YYAnimatedImageView">
+                                <rect key="frame" x="18" y="53" width="202" height="198"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEq-RX-Wa4">
+                                <rect key="frame" x="18" y="53" width="202" height="198"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="tapImage:" destination="UTL-u3-t8c" eventType="touchUpInside" id="5dF-0B-CZ0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-CP-qfi">
+                                <rect key="frame" x="17" y="253" width="200" height="43"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-w3-1t2">
+                                        <rect key="frame" x="137" y="0.0" width="63" height="43"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="collectionType_abChat"/>
+                                        <connections>
+                                            <action selector="deleteClick:" destination="UTL-u3-t8c" eventType="touchUpInside" id="ElO-SS-TAY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9q-J7-XcU">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="43"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="scfgLoveOrtrait"/>
+                                        <connections>
+                                            <action selector="download:" destination="UTL-u3-t8c" eventType="touchUpInside" id="miI-Bu-3xS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="A9q-J7-XcU" secondAttribute="bottom" id="5o7-kd-j9j"/>
+                                    <constraint firstAttribute="bottom" secondItem="eOt-w3-1t2" secondAttribute="bottom" id="aQ7-L4-n9p"/>
+                                    <constraint firstItem="eOt-w3-1t2" firstAttribute="top" secondItem="3Mx-CP-qfi" secondAttribute="top" id="X7R-NJ-is1"/>
+                                    <constraint firstItem="A9q-J7-XcU" firstAttribute="top" secondItem="3Mx-CP-qfi" secondAttribute="top" id="mdx-bQ-6Ug"/>
+                                    <constraint firstAttribute="trailing" secondItem="eOt-w3-1t2" secondAttribute="trailing" id="D2h-P7-0WP"/>
+                                    <constraint firstAttribute="height" constant="43.02" id="pCI-44-Kp2"/>
+                                    <constraint firstItem="A9q-J7-XcU" firstAttribute="leading" secondItem="3Mx-CP-qfi" secondAttribute="leading" id="mjY-Mc-vCp"/>
+                                    <constraint firstAttribute="width" constant="199.99" id="Tul-G2-G14"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="materialLoginChatdraw.gif" translatesAutoresizingMaskIntoConstraints="NO" id="35c-WL-Ikn" customClass="YYAnimatedImageView">
+                                <rect key="frame" x="86" y="119" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66.02" id="MZd-kS-zsZ"/>
+                                    <constraint firstAttribute="width" constant="66.03" id="S2C-Nn-6cY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.12549019607843137" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tEq-RX-Wa4" firstAttribute="top" secondItem="wHq-15-wq1" secondAttribute="top" id="SQG-r6-pvQ"/>
+                            <constraint firstItem="tEq-RX-Wa4" firstAttribute="trailing" secondItem="wHq-15-wq1" secondAttribute="trailing" id="X8N-nj-IZw"/>
+                            <constraint firstItem="35c-WL-Ikn" firstAttribute="centerX" secondItem="wHq-15-wq1" secondAttribute="centerX" id="NgT-0A-vLR"/>
+                            <constraint firstAttribute="bottom" secondItem="wHq-15-wq1" secondAttribute="bottom" constant="55.99" id="Xzn-ar-i8u"/>
+                            <constraint firstItem="tEq-RX-Wa4" firstAttribute="leading" secondItem="wHq-15-wq1" secondAttribute="leading" id="OWv-w8-XbP"/>
+                            <constraint firstAttribute="bottom" secondItem="3Mx-CP-qfi" secondAttribute="bottom" constant="11.01" id="TRW-5j-2Ji"/>
+                            <constraint firstItem="hfK-jV-3VR" firstAttribute="leading" secondItem="JRL-aq-ciX" secondAttribute="leading" constant="17.99" id="YPk-jB-f1R"/>
+                            <constraint firstItem="tEq-RX-Wa4" firstAttribute="bottom" secondItem="wHq-15-wq1" secondAttribute="bottom" id="Str-IT-SNB"/>
+                            <constraint firstItem="wHq-15-wq1" firstAttribute="top" secondItem="JRL-aq-ciX" secondAttribute="top" constant="53.01" id="oPR-k1-GFI"/>
+                            <constraint firstItem="35c-WL-Ikn" firstAttribute="centerY" secondItem="wHq-15-wq1" secondAttribute="centerY" id="BIB-gp-BTR"/>
+                            <constraint firstAttribute="trailing" secondItem="wHq-15-wq1" secondAttribute="trailing" constant="18.02" id="Gor-X4-mxN"/>
+                            <constraint firstAttribute="height" constant="306.97" id="rLX-9Q-ye5"/>
+                            <constraint firstAttribute="width" constant="237.99" id="MOH-8I-7HX"/>
+                            <constraint firstItem="hfK-jV-3VR" firstAttribute="top" secondItem="JRL-aq-ciX" secondAttribute="top" constant="14.98" id="3vr-oQ-SFl"/>
+                            <constraint firstItem="wHq-15-wq1" firstAttribute="leading" secondItem="JRL-aq-ciX" secondAttribute="leading" constant="17.98" id="Jbn-fm-3Ci"/>
+                            <constraint firstItem="3Mx-CP-qfi" firstAttribute="leading" secondItem="JRL-aq-ciX" secondAttribute="leading" constant="17.01" id="kjO-lV-nSA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JRL-aq-ciX" secondAttribute="bottom" constant="13.02" id="tv7-dn-ESB"/>
+                    <constraint firstItem="JRL-aq-ciX" firstAttribute="top" secondItem="N15-vP-yPn" secondAttribute="top" constant="12.99" id="B9e-Dv-idn"/>
+                    <constraint firstItem="JRL-aq-ciX" firstAttribute="leading" secondItem="N15-vP-yPn" secondAttribute="leading" constant="15.97" id="QMg-Th-UBQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Kgc-v1-QHg"/>
+            <connections>
+                <outlet property="gifImage" destination="35c-WL-Ikn" id="nOT-zm-orQ"/>
+                <outlet property="itemsView" destination="3Mx-CP-qfi" id="Gkq-GX-t00"/>
+                <outlet property="picImage" destination="wHq-15-wq1" id="s39-YO-OXC"/>
+                <outlet property="statusLabel" destination="hfK-jV-3VR" id="dvC-ha-hjL"/>
+            </connections>
+            <point key="canvasLocation" x="71.538461538461533" y="93.127962085308056"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="collectionType_abChat" width="63" height="30"/>
+        <image name="scfgLoveOrtrait" width="63" height="30"/>
+        <image name="materialLoginChatdraw.gif" width="200" height="200"/>
+    </resources>
+</document>

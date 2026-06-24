@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6mD-jP-KMI" customClass="MNPTextJiaoView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="231"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P08-Wj-yYx">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="231"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="P08-Wj-yYx" firstAttribute="top" secondItem="6mD-jP-KMI" secondAttribute="top" id="E29-9L-2x3"/>
+                <constraint firstAttribute="trailing" secondItem="P08-Wj-yYx" secondAttribute="trailing" id="BOR-AJ-QXW"/>
+                <constraint firstAttribute="bottom" secondItem="P08-Wj-yYx" secondAttribute="bottom" id="ANu-4G-N9O"/>
+                <constraint firstItem="P08-Wj-yYx" firstAttribute="leading" secondItem="6mD-jP-KMI" secondAttribute="leading" id="ux6-Io-XmS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImage" destination="P08-Wj-yYx" id="z4R-dq-GB7"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="205.98591549295776"/>
+        </view>
+    </objects>
+</document>

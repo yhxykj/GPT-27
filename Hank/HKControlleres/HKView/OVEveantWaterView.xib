@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6mD-jP-KMI" customClass="OVEveantWaterView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2LN-bN-6zU">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHE-iR-JLI">
+                    <rect key="frame" x="27.666666666666657" y="190" width="338" height="388"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="积分卡片" translatesAutoresizingMaskIntoConstraints="NO" id="qwX-Xi-nuY">
+                            <rect key="frame" x="0.0" y="0.0" width="338" height="388"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjh-Bb-mDv">
+                            <rect key="frame" x="19" y="45" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32.03" id="HgZ-VF-zPe"/>
+                                <constraint firstAttribute="width" constant="31.96" id="3By-O9-Esa"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="textSeekDelete_ns"/>
+                            <connections>
+                                <action selector="closeAction:" destination="6mD-jP-KMI" eventType="touchUpInside" id="HRZ-df-oxY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnC-f4-bMt">
+                            <rect key="frame" x="56" y="273" width="225" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52.99" id="6pv-QU-Agj"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="buttonAction:" destination="6mD-jP-KMI" eventType="touchUpInside" id="mYP-8l-cJY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="qwX-Xi-nuY" firstAttribute="top" secondItem="vHE-iR-JLI" secondAttribute="top" id="Jqw-Iq-JZi"/>
+                        <constraint firstAttribute="bottom" secondItem="qwX-Xi-nuY" secondAttribute="bottom" id="QQV-kH-AD9"/>
+                        <constraint firstItem="pjh-Bb-mDv" firstAttribute="leading" secondItem="vHE-iR-JLI" secondAttribute="leading" constant="19.01" id="kOm-48-6fo"/>
+                        <constraint firstAttribute="bottom" secondItem="wnC-f4-bMt" secondAttribute="bottom" constant="62.02" id="Wju-j1-y6H"/>
+                        <constraint firstAttribute="width" constant="338.01" id="4Mq-si-dYE"/>
+                        <constraint firstItem="pjh-Bb-mDv" firstAttribute="top" secondItem="vHE-iR-JLI" secondAttribute="top" constant="45.02" id="RUD-tG-iF3"/>
+                        <constraint firstAttribute="height" constant="387.99" id="HaT-8D-55u"/>
+                        <constraint firstItem="wnC-f4-bMt" firstAttribute="leading" secondItem="vHE-iR-JLI" secondAttribute="leading" constant="55.96" id="ws9-MV-ccD"/>
+                        <constraint firstAttribute="trailing" secondItem="wnC-f4-bMt" secondAttribute="trailing" constant="56.99" id="xu1-p0-h9D"/>
+                        <constraint firstItem="qwX-Xi-nuY" firstAttribute="leading" secondItem="vHE-iR-JLI" secondAttribute="leading" id="vkJ-iz-FVA"/>
+                        <constraint firstAttribute="trailing" secondItem="qwX-Xi-nuY" secondAttribute="trailing" id="5eZ-gz-vaC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Qkf-SI-ntZ"/>
+            <constraints>
+                <constraint firstItem="2LN-bN-6zU" firstAttribute="leading" secondItem="Qkf-SI-ntZ" secondAttribute="leading" id="Uj7-kr-CDs"/>
+                <constraint firstItem="2LN-bN-6zU" firstAttribute="top" secondItem="6mD-jP-KMI" secondAttribute="top" id="YPA-aU-6YN"/>
+                <constraint firstItem="vHE-iR-JLI" firstAttribute="centerX" secondItem="6mD-jP-KMI" secondAttribute="centerX" id="2Ei-EU-dkp"/>
+                <constraint firstAttribute="bottom" secondItem="2LN-bN-6zU" secondAttribute="bottom" id="vQU-Ue-bGc"/>
+                <constraint firstItem="Qkf-SI-ntZ" firstAttribute="trailing" secondItem="2LN-bN-6zU" secondAttribute="trailing" id="iJo-Km-Ctp"/>
+                <constraint firstItem="vHE-iR-JLI" firstAttribute="top" secondItem="6mD-jP-KMI" secondAttribute="top" constant="189.98" id="gaL-H1-u6Z"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="textSeekDelete_ns" width="32" height="32"/>
+        <image name="积分卡片" width="338" height="388"/>
+    </resources>
+</document>

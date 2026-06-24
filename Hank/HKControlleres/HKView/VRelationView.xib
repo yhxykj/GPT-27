@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6mD-jP-KMI" customClass="VRelationView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRa-sz-K8x">
+                    <rect key="frame" x="0.0" y="336" width="393" height="180"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itemShow" translatesAutoresizingMaskIntoConstraints="NO" id="0qN-W0-WVL">
+                            <rect key="frame" x="161.66666666666666" y="10" width="70" height="71"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片生成中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnd-qS-PmH">
+                            <rect key="frame" x="146" y="111" width="101" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23.99" id="xgV-pg-tkR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（返回不会中断生成，可在我的作品查看）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWI-U9-cgk">
+                            <rect key="frame" x="60.666666666666657" y="143" width="272" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="OWI-U9-cgk" firstAttribute="top" secondItem="Cnd-qS-PmH" secondAttribute="bottom" constant="7.98" id="00l-Js-eAE"/>
+                        <constraint firstAttribute="height" constant="180.01" id="rD5-k0-VPm"/>
+                        <constraint firstItem="OWI-U9-cgk" firstAttribute="centerX" secondItem="MRa-sz-K8x" secondAttribute="centerX" id="zKQ-l4-SaF"/>
+                        <constraint firstItem="Cnd-qS-PmH" firstAttribute="centerX" secondItem="MRa-sz-K8x" secondAttribute="centerX" id="b9u-X4-QJn"/>
+                        <constraint firstItem="0qN-W0-WVL" firstAttribute="top" secondItem="MRa-sz-K8x" secondAttribute="top" constant="9.99" id="bq6-DG-OIY"/>
+                        <constraint firstAttribute="bottom" secondItem="OWI-U9-cgk" secondAttribute="bottom" constant="19.98" id="6VV-cX-20C"/>
+                        <constraint firstItem="0qN-W0-WVL" firstAttribute="centerX" secondItem="MRa-sz-K8x" secondAttribute="centerX" id="0Wq-TT-4hX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Qkf-SI-ntZ"/>
+            <constraints>
+                <constraint firstItem="Qkf-SI-ntZ" firstAttribute="trailing" secondItem="MRa-sz-K8x" secondAttribute="trailing" id="BLS-km-q6W"/>
+                <constraint firstItem="MRa-sz-K8x" firstAttribute="leading" secondItem="Qkf-SI-ntZ" secondAttribute="leading" id="cRr-qw-hXa"/>
+                <constraint firstItem="MRa-sz-K8x" firstAttribute="centerY" secondItem="6mD-jP-KMI" secondAttribute="centerY" id="9ng-xh-bEi"/>
+            </constraints>
+            <connections>
+                <outlet property="descLabel" destination="OWI-U9-cgk" id="2dY-Vy-GzM"/>
+                <outlet property="loadImageview" destination="0qN-W0-WVL" id="Ucp-Qz-jvH"/>
+                <outlet property="titleLabel" destination="Cnd-qS-PmH" id="NRc-1e-wUE"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="itemShow" width="70" height="71"/>
+    </resources>
+</document>

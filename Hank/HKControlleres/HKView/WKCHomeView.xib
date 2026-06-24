@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6mD-jP-KMI" customClass="WKCHomeView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Xr-VK-ATM">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="hSg-mH-pPV" appends="YES" id="QXg-5j-fah"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3RZ-S3-OgI">
+                    <rect key="frame" x="32" y="220.66666666666663" width="326" height="363"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quickloginYloadingItem" translatesAutoresizingMaskIntoConstraints="NO" id="cF2-Vy-fn1">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="363"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="363.02" id="lFu-OL-7JI"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkX-Se-flh">
+                            <rect key="frame" x="22" y="267" width="282" height="66"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65.99" id="qKO-Hw-wBs"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="upgrades:" destination="6mD-jP-KMI" eventType="touchUpInside" id="r0E-5v-5Rn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBe-By-ohm">
+                            <rect key="frame" x="260" y="0.0" width="66" height="66"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65.98" id="vpq-kP-WLx"/>
+                                <constraint firstAttribute="height" constant="65.98" id="kje-5C-f4E"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="bufferInsert"/>
+                            <connections>
+                                <action selector="close:" destination="6mD-jP-KMI" eventType="touchUpInside" id="eRr-Fc-qdH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UBe-By-ohm" firstAttribute="top" secondItem="3RZ-S3-OgI" secondAttribute="top" id="DL4-v9-2Sx"/>
+                        <constraint firstAttribute="trailing" secondItem="qkX-Se-flh" secondAttribute="trailing" constant="22.01" id="fsv-oE-O0f"/>
+                        <constraint firstAttribute="height" constant="362.98" id="VWF-zc-L4D"/>
+                        <constraint firstItem="cF2-Vy-fn1" firstAttribute="top" secondItem="3RZ-S3-OgI" secondAttribute="top" id="Fij-2C-sQw"/>
+                        <constraint firstAttribute="trailing" secondItem="cF2-Vy-fn1" secondAttribute="trailing" id="4Pa-Uk-W7X"/>
+                        <constraint firstAttribute="bottom" secondItem="qkX-Se-flh" secondAttribute="bottom" constant="29.99" id="mwP-dc-UWe"/>
+                        <constraint firstAttribute="trailing" secondItem="UBe-By-ohm" secondAttribute="trailing" id="1DJ-Ys-ZW5"/>
+                        <constraint firstItem="cF2-Vy-fn1" firstAttribute="centerX" secondItem="3RZ-S3-OgI" secondAttribute="centerX" id="efk-uK-prs"/>
+                        <constraint firstItem="qkX-Se-flh" firstAttribute="leading" secondItem="3RZ-S3-OgI" secondAttribute="leading" constant="22.01" id="9ge-gg-zTP"/>
+                        <constraint firstAttribute="width" constant="325.99" id="ple-SU-h5M"/>
+                        <constraint firstItem="cF2-Vy-fn1" firstAttribute="leading" secondItem="3RZ-S3-OgI" secondAttribute="leading" id="UDo-hY-fkm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Qkf-SI-ntZ"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0Xr-VK-ATM" secondAttribute="trailing" id="7DK-xU-BY6"/>
+                <constraint firstItem="0Xr-VK-ATM" firstAttribute="leading" secondItem="6mD-jP-KMI" secondAttribute="leading" id="wU7-yP-kXF"/>
+                <constraint firstItem="3RZ-S3-OgI" firstAttribute="centerX" secondItem="6mD-jP-KMI" secondAttribute="centerX" id="GOs-8d-4Lq"/>
+                <constraint firstItem="3RZ-S3-OgI" firstAttribute="centerY" secondItem="6mD-jP-KMI" secondAttribute="centerY" constant="-20" id="bRU-0D-Fxr"/>
+                <constraint firstAttribute="bottom" secondItem="0Xr-VK-ATM" secondAttribute="bottom" id="a30-bV-VX3"/>
+                <constraint firstItem="0Xr-VK-ATM" firstAttribute="top" secondItem="6mD-jP-KMI" secondAttribute="top" id="0S5-wW-f3v"/>
+            </constraints>
+            <point key="canvasLocation" x="121.53846153846153" y="-11.374407582938389"/>
+        </view>
+        <tapGestureRecognizer id="hSg-mH-pPV">
+            <connections>
+                <action selector="ewrqwer:" destination="6mD-jP-KMI" id="o2D-uZ-mrb"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="bufferInsert" width="17" height="17"/>
+        <image name="quickloginYloadingItem" width="327" height="363"/>
+    </resources>
+</document>

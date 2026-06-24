@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="ZIDHeaderCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drawlodingPhone" translatesAutoresizingMaskIntoConstraints="NO" id="wuS-Ac-nAr">
+                        <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteDance" translatesAutoresizingMaskIntoConstraints="NO" id="nSA-5D-ltG">
+                        <rect key="frame" x="49" y="12" width="21" height="22"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkF-UC-itx">
+                        <rect key="frame" x="51" y="93" width="17" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.01" id="Hdc-qu-uZz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="wuS-Ac-nAr" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="y37-17-j0J"/>
+                <constraint firstAttribute="bottom" secondItem="GkF-UC-itx" secondAttribute="bottom" constant="5.97" id="wJP-PE-ujv"/>
+                <constraint firstItem="GkF-UC-itx" firstAttribute="centerX" secondItem="Lbw-eF-3mQ" secondAttribute="centerX" id="fxE-72-DfA"/>
+                <constraint firstItem="wuS-Ac-nAr" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="5fx-Xy-3hO"/>
+                <constraint firstItem="nSA-5D-ltG" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" constant="11.99" id="te2-jc-dsw"/>
+                <constraint firstAttribute="bottom" secondItem="wuS-Ac-nAr" secondAttribute="bottom" id="E1s-Fn-rJB"/>
+                <constraint firstAttribute="trailing" secondItem="wuS-Ac-nAr" secondAttribute="trailing" id="yDo-Ge-zbz"/>
+                <constraint firstItem="nSA-5D-ltG" firstAttribute="centerX" secondItem="Lbw-eF-3mQ" secondAttribute="centerX" id="NSC-5a-KNq"/>
+            </constraints>
+            <size key="customSize" width="119" height="119"/>
+            <connections>
+                <outlet property="bgImageToplayout" destination="te2-jc-dsw" id="2gq-OW-yql"/>
+                <outlet property="cell_bg_image" destination="wuS-Ac-nAr" id="R91-Ay-ETw"/>
+                <outlet property="scale_image" destination="nSA-5D-ltG" id="qps-m4-mPa"/>
+                <outlet property="scale_label" destination="GkF-UC-itx" id="DqK-Bl-PPc"/>
+            </connections>
+            <point key="canvasLocation" x="182.44274809160305" y="11.619718309859156"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="drawlodingPhone" width="61" height="61"/>
+        <image name="whiteDance" width="21" height="22"/>
+    </resources>
+</document>
