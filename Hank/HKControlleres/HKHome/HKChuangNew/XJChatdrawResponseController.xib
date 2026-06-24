@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner" customClass="XJChatdrawResponseController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="AFg-XY-p6y" id="l93-EM-90P"/>
+                <outlet property="view" destination="gkh-sS-0Bv" id="XCO-v5-YVj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gkh-sS-0Bv">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWl-iX-1Uv">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQt-gR-hZ7">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.02" id="J0F-Y9-1w7"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="recordsThree"/>
+                            <connections>
+                                <action selector="backAction:" destination="WVj-YH-4F9" eventType="touchUpInside" id="52B-Du-epY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创作记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWb-pl-77S">
+                            <rect key="frame" x="162" y="11.666666666666671" width="69.333333333333314" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.035294117649999998" green="0.039215686270000001" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="SQt-gR-hZ7" firstAttribute="top" secondItem="FWl-iX-1Uv" secondAttribute="top" id="KNF-8D-pPW"/>
+                        <constraint firstAttribute="bottom" secondItem="SQt-gR-hZ7" secondAttribute="bottom" id="Gu9-Ad-GmG"/>
+                        <constraint firstItem="zWb-pl-77S" firstAttribute="centerX" secondItem="FWl-iX-1Uv" secondAttribute="centerX" id="VZw-Fl-d5b"/>
+                        <constraint firstItem="SQt-gR-hZ7" firstAttribute="leading" secondItem="FWl-iX-1Uv" secondAttribute="leading" id="LAP-Hr-fUh"/>
+                        <constraint firstItem="zWb-pl-77S" firstAttribute="centerY" secondItem="FWl-iX-1Uv" secondAttribute="centerY" id="uwQ-P4-5Bm"/>
+                        <constraint firstAttribute="height" constant="43.98" id="ni3-QQ-nJd"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="WVj-YH-4F9" estimatedRowHeight="WVj-YH-4F9" sectionHeaderHeight="WVj-YH-4F9" estimatedSectionHeaderHeight="WVj-YH-4F9" sectionFooterHeight="WVj-YH-4F9" estimatedSectionFooterHeight="WVj-YH-4F9" translatesAutoresizingMaskIntoConstraints="NO" id="AFg-XY-p6y">
+                    <rect key="frame" x="0.0" y="108" width="393" height="744"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="WVj-YH-4F9" id="DzJ-I8-COR"/>
+                        <outlet property="delegate" destination="WVj-YH-4F9" id="zrH-gb-nFD"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lkt-8F-o0f"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FWl-iX-1Uv" secondAttribute="trailing" id="QS3-Mz-qSv"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="AFg-XY-p6y" secondAttribute="trailing" id="CSt-xD-TKq"/>
+                <constraint firstItem="AFg-XY-p6y" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" id="OGd-8s-YBU"/>
+                <constraint firstItem="FWl-iX-1Uv" firstAttribute="top" secondItem="lkt-8F-o0f" secondAttribute="top" id="HDP-tn-ZsC"/>
+                <constraint firstAttribute="bottom" secondItem="AFg-XY-p6y" secondAttribute="bottom" id="G1q-JN-r71"/>
+                <constraint firstItem="AFg-XY-p6y" firstAttribute="top" secondItem="FWl-iX-1Uv" secondAttribute="bottom" constant="5.02" id="ON8-Jf-OeN"/>
+                <constraint firstItem="FWl-iX-1Uv" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" id="cDC-nJ-leP"/>
+            </constraints>
+            <point key="canvasLocation" x="114" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="recordsThree" width="10" height="18"/>
+    </resources>
+</document>

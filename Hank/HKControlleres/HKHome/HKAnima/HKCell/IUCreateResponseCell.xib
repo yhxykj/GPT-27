@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="IUCreateResponseCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="251"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="251"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W7x-9E-z9h">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="200"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="往事流转在你的眼眸#国风#清冷感#大坨云" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC7-vP-BxO">
+                        <rect key="frame" x="0.0" y="207" width="175" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36.02" id="L8l-la-Cvs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="u7z-mu-jur"/>
+            <constraints>
+                <constraint firstItem="W7x-9E-z9h" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="kaB-Pw-HCs"/>
+                <constraint firstAttribute="bottom" secondItem="SC7-vP-BxO" secondAttribute="bottom" constant="8.02" id="Xsm-nn-C6F"/>
+                <constraint firstItem="SC7-vP-BxO" firstAttribute="top" secondItem="W7x-9E-z9h" secondAttribute="bottom" constant="6.99" id="210-0Y-ySS"/>
+                <constraint firstAttribute="trailing" secondItem="W7x-9E-z9h" secondAttribute="trailing" id="rPb-8I-Tjt"/>
+                <constraint firstAttribute="trailing" secondItem="SC7-vP-BxO" secondAttribute="trailing" id="SoK-KT-zA6"/>
+                <constraint firstItem="SC7-vP-BxO" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="UsI-q0-TFE"/>
+                <constraint firstItem="W7x-9E-z9h" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="pgF-Qk-NDt"/>
+            </constraints>
+            <size key="customSize" width="225" height="257"/>
+            <connections>
+                <outlet property="bgImage" destination="W7x-9E-z9h" id="Non-Lq-tZs"/>
+                <outlet property="desclabel" destination="SC7-vP-BxO" id="vZK-A9-RtU"/>
+            </connections>
+            <point key="canvasLocation" x="264.8854961832061" y="61.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+</document>

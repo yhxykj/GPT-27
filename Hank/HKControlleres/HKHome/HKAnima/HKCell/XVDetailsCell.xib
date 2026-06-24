@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lbw-eF-3mQ" customClass="XVDetailsCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="304"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="304"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="往事流转在你的眼眸#国风#清冷感#大坨云" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="598-Fy-606">
+                        <rect key="frame" x="0.0" y="260" width="215" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36.05" id="MFg-mG-hc8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vM9-JV-w6S">
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="253"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pZV-rO-Gss">
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="253"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCJ-Lr-Xie">
+                        <rect key="frame" x="175" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="39.98" id="U6M-hY-74D"/>
+                            <constraint firstAttribute="height" constant="39.98" id="MLR-fJ-SAX"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="recordPagePage"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="u7z-mu-jur"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bCJ-Lr-Xie" secondAttribute="trailing" id="15j-GK-XTO"/>
+                <constraint firstAttribute="bottom" secondItem="598-Fy-606" secondAttribute="bottom" constant="8.01" id="jEw-OW-hEC"/>
+                <constraint firstAttribute="trailing" secondItem="vM9-JV-w6S" secondAttribute="trailing" id="Dig-Cb-UrA"/>
+                <constraint firstItem="pZV-rO-Gss" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="stj-V6-cy6"/>
+                <constraint firstItem="vM9-JV-w6S" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="nYw-MH-nUW"/>
+                <constraint firstItem="bCJ-Lr-Xie" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="Gbs-cz-BDs"/>
+                <constraint firstItem="598-Fy-606" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="Vm3-ac-VqZ"/>
+                <constraint firstItem="pZV-rO-Gss" firstAttribute="leading" secondItem="Lbw-eF-3mQ" secondAttribute="leading" id="z49-rp-lis"/>
+                <constraint firstItem="598-Fy-606" firstAttribute="top" secondItem="pZV-rO-Gss" secondAttribute="bottom" constant="6.97" id="sy0-Yv-PFy"/>
+                <constraint firstAttribute="trailing" secondItem="pZV-rO-Gss" secondAttribute="trailing" id="VLK-TU-c2b"/>
+                <constraint firstAttribute="bottom" secondItem="vM9-JV-w6S" secondAttribute="bottom" constant="51.02" id="0Dl-Yb-Hkq"/>
+                <constraint firstItem="vM9-JV-w6S" firstAttribute="top" secondItem="Lbw-eF-3mQ" secondAttribute="top" id="z5u-pP-4RL"/>
+                <constraint firstAttribute="trailing" secondItem="598-Fy-606" secondAttribute="trailing" id="6Xm-je-9Jl"/>
+            </constraints>
+            <size key="customSize" width="215" height="304"/>
+            <connections>
+                <outlet property="bgImage" destination="pZV-rO-Gss" id="gOC-oI-r1W"/>
+                <outlet property="bgView" destination="vM9-JV-w6S" id="MfD-jK-UAv"/>
+                <outlet property="descLabel" destination="598-Fy-606" id="2sf-Dq-3py"/>
+            </connections>
+            <point key="canvasLocation" x="257.25190839694653" y="78.16901408450704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="recordPagePage" width="18" height="18"/>
+    </resources>
+</document>

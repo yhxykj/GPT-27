@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner" customClass="QMyloadingController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="bgImage" destination="oJC-gb-ROl" id="HJB-2w-z86"/>
+                <outlet property="button" destination="Ypk-OJ-869" id="ryQ-8Y-HOL"/>
+                <outlet property="view" destination="gkh-sS-0Bv" id="XCO-v5-YVj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gkh-sS-0Bv">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypk-OJ-869">
+                    <rect key="frame" x="31" y="718" width="331" height="54"/>
+                    <color key="backgroundColor" red="0.050980392156862744" green="0.69019607843137254" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54.01" id="KyA-0c-695"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="立即制作"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="27"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="uploadPhotoAction:" destination="WVj-YH-4F9" eventType="touchUpInside" id="Q6o-6B-tGy"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxh-4t-514">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZg-r5-piz">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.02" id="aH5-Sb-a6Z"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="recordsThree"/>
+                            <connections>
+                                <action selector="backAction:" destination="WVj-YH-4F9" eventType="touchUpInside" id="iRQ-3o-hQ5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qh-1d-QTX">
+                            <rect key="frame" x="308" y="0.0" width="75" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75.01" id="BCM-SY-GOO"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="contentItem"/>
+                            <connections>
+                                <action selector="mineworksAction:" destination="WVj-YH-4F9" eventType="touchUpInside" id="YoK-A3-pfj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4qh-1d-QTX" secondAttribute="bottom" id="Fyb-2L-z3Z"/>
+                        <constraint firstAttribute="trailing" secondItem="4qh-1d-QTX" secondAttribute="trailing" constant="10.03" id="ZFy-3i-488"/>
+                        <constraint firstItem="BZg-r5-piz" firstAttribute="leading" secondItem="nxh-4t-514" secondAttribute="leading" id="rhJ-xN-xpB"/>
+                        <constraint firstAttribute="bottom" secondItem="BZg-r5-piz" secondAttribute="bottom" id="QWZ-2g-wtI"/>
+                        <constraint firstItem="4qh-1d-QTX" firstAttribute="top" secondItem="nxh-4t-514" secondAttribute="top" id="lap-qI-MBT"/>
+                        <constraint firstAttribute="height" constant="44.01" id="nA5-uq-iot"/>
+                        <constraint firstItem="BZg-r5-piz" firstAttribute="top" secondItem="nxh-4t-514" secondAttribute="top" id="84e-EM-kkM"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginTool" translatesAutoresizingMaskIntoConstraints="NO" id="oJC-gb-ROl">
+                    <rect key="frame" x="17" y="139" width="359" height="493"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oJC-gb-ROl" secondAttribute="height" multiplier="359:493" id="SXq-2F-TkD"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lkt-8F-o0f"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="bottom" secondItem="Ypk-OJ-869" secondAttribute="bottom" constant="46.03" id="vDB-PG-Hqq"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="Ypk-OJ-869" secondAttribute="trailing" constant="31.02" id="J5R-hT-NpO"/>
+                <constraint firstItem="oJC-gb-ROl" firstAttribute="top" secondItem="nxh-4t-514" secondAttribute="bottom" constant="36.03" id="9c5-g4-WVN"/>
+                <constraint firstItem="oJC-gb-ROl" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" constant="16.99" id="aiQ-K6-Hrr"/>
+                <constraint firstItem="oJC-gb-ROl" firstAttribute="centerX" secondItem="gkh-sS-0Bv" secondAttribute="centerX" id="Do3-m9-ivd"/>
+                <constraint firstItem="nxh-4t-514" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" id="60D-bx-86p"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="oJC-gb-ROl" secondAttribute="trailing" constant="17.01" id="Ft1-2E-ZuU"/>
+                <constraint firstItem="nxh-4t-514" firstAttribute="top" secondItem="lkt-8F-o0f" secondAttribute="top" id="N94-Vk-TvJ"/>
+                <constraint firstItem="Ypk-OJ-869" firstAttribute="centerX" secondItem="gkh-sS-0Bv" secondAttribute="centerX" id="hay-uI-HV9"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="nxh-4t-514" secondAttribute="trailing" id="mb6-Ik-m8X"/>
+                <constraint firstItem="Ypk-OJ-869" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" constant="30.99" id="dIU-Hq-5st"/>
+            </constraints>
+            <point key="canvasLocation" x="114" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginTool" width="358" height="493"/>
+        <image name="recordsThree" width="10" height="18"/>
+        <image name="contentItem" width="72" height="26"/>
+    </resources>
+</document>

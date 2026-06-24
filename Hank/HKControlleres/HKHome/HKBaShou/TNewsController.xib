@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="WVj-YH-4F9" userLabel="File's Owner" customClass="TNewsController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="S3T-Bv-e1M" id="jfM-Rv-E5T"/>
+                <outlet property="titleView" destination="MWB-46-A7E" id="RLl-Rq-Mc4"/>
+                <outlet property="view" destination="gkh-sS-0Bv" id="XCO-v5-YVj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-Oz-JI7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gkh-sS-0Bv">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hg3-8X-fmt">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatdrawOpenTable" translatesAutoresizingMaskIntoConstraints="NO" id="rWA-d9-ag2">
+                            <rect key="frame" x="15" y="3.6666666666666643" width="68" height="37"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWq-Yq-I5M">
+                            <rect key="frame" x="310" y="0.0" width="65" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64.98" id="TcD-gc-fMV"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="elevtFreePhoto"/>
+                            <connections>
+                                <action selector="enterMemberClick:" destination="WVj-YH-4F9" eventType="touchUpInside" id="IR4-04-KOe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rWA-d9-ag2" firstAttribute="centerY" secondItem="Hg3-8X-fmt" secondAttribute="centerY" id="NnW-Lj-4xz"/>
+                        <constraint firstItem="UWq-Yq-I5M" firstAttribute="top" secondItem="Hg3-8X-fmt" secondAttribute="top" id="7pX-p5-049"/>
+                        <constraint firstAttribute="height" constant="43.99" id="xc9-oy-UKQ"/>
+                        <constraint firstItem="rWA-d9-ag2" firstAttribute="leading" secondItem="Hg3-8X-fmt" secondAttribute="leading" constant="14.98" id="HlL-47-ZSH"/>
+                        <constraint firstAttribute="bottom" secondItem="UWq-Yq-I5M" secondAttribute="bottom" id="cYh-Y9-nA0"/>
+                        <constraint firstAttribute="trailing" secondItem="UWq-Yq-I5M" secondAttribute="trailing" constant="15.01" id="VRR-Cx-Fn5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWB-46-A7E">
+                    <rect key="frame" x="0.0" y="91" width="390" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.99" id="9uO-Sh-me5"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-Bv-e1M">
+                    <rect key="frame" x="0.0" y="135" width="390" height="675"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jkg-YM-Lz8">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xen-HU-q0Q">
+                    <rect key="frame" x="306" y="731" width="66" height="66"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="drawCanvas"/>
+                    <connections>
+                        <action selector="addAssitantClick:" destination="WVj-YH-4F9" eventType="touchUpInside" id="BIZ-Fl-3eR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lkt-8F-o0f"/>
+            <color key="backgroundColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MWB-46-A7E" firstAttribute="top" secondItem="Hg3-8X-fmt" secondAttribute="bottom" id="kK0-x5-MWH"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="bottom" secondItem="Xen-HU-q0Q" secondAttribute="bottom" constant="12.97" id="YDo-dP-MBB"/>
+                <constraint firstItem="S3T-Bv-e1M" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" id="Wxk-ZS-2tf"/>
+                <constraint firstItem="MWB-46-A7E" firstAttribute="leading" secondItem="gkh-sS-0Bv" secondAttribute="leading" id="fYm-VM-8tJ"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="bottom" secondItem="S3T-Bv-e1M" secondAttribute="bottom" id="udJ-Na-M04"/>
+                <constraint firstItem="Hg3-8X-fmt" firstAttribute="leading" secondItem="lkt-8F-o0f" secondAttribute="leading" id="0nc-lu-1n6"/>
+                <constraint firstItem="Hg3-8X-fmt" firstAttribute="top" secondItem="lkt-8F-o0f" secondAttribute="top" id="129-TX-03U"/>
+                <constraint firstItem="S3T-Bv-e1M" firstAttribute="top" secondItem="MWB-46-A7E" secondAttribute="bottom" id="a7O-gD-IdN"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="Xen-HU-q0Q" secondAttribute="trailing" constant="17.96" id="fTw-4K-hde"/>
+                <constraint firstItem="lkt-8F-o0f" firstAttribute="trailing" secondItem="MWB-46-A7E" secondAttribute="trailing" id="ImH-rx-2w0"/>
+                <constraint firstAttribute="trailing" secondItem="S3T-Bv-e1M" secondAttribute="trailing" id="R2d-Lo-hBI"/>
+                <constraint firstItem="Hg3-8X-fmt" firstAttribute="trailing" secondItem="lkt-8F-o0f" secondAttribute="trailing" id="qvU-dX-eim"/>
+            </constraints>
+            <point key="canvasLocation" x="104.61538461538461" y="-14.218009478672984"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="drawCanvas" width="66" height="66"/>
+        <image name="chatdrawOpenTable" width="68" height="37"/>
+        <image name="elevtFreePhoto" width="65" height="41"/>
+    </resources>
+</document>
